@@ -1,0 +1,203 @@
+
+
+/*---- Major elements ----*/
+
+html {
+	height: 100%;
+	margin: 0em auto;
+	padding: 0em;
+	max-width: 80em;
+	background-color: #F0F0F0;
+	overflow-y: scroll;
+	font-family: sans-serif;
+	color: #000000;
+}
+
+body {
+	box-sizing: border-box;
+	min-height: 100%;
+	margin: 0em;
+	padding: 0em;
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+	flex-grow: 0;
+	flex-shrink: 0;
+	background-color: #404040;
+}
+
+h1 {
+	margin: 0em;
+	padding-top: 0.3em;
+	padding-bottom: 0.3em;
+	text-align: center;
+	font-weight: bold;
+	color: #D0D0D0;
+}
+
+article {
+	flex-grow: 1;
+	flex-shrink: 1;
+	padding: 1.0em 1.0em;
+	border-left: 0.3em solid #F8F8F8;
+	border-right: 0.3em solid #F8F8F8;
+	background-color: #FFFFFF;
+	background-image: url("wallpaper.png");
+	background-repeat: no-repeat;
+	background-position: top right;
+	background-size: 60% auto;
+}
+
+section {
+	padding: 0.8em 1.5em;
+	background-color: rgba(0,0,0,0.01);
+	border: 1px solid #E0E0E0;
+	border-radius: 0.8em;
+}
+
+section + section {
+	margin-top: 1.5em;
+}
+
+h2 {
+	margin-top: 0em;
+	margin-bottom: 0.3em;
+}
+
+canvas {
+	display: block;
+}
+
+input {
+	font-family: inherit;
+	font-size: inherit;
+}
+
+input[type=button] {
+	padding: 0.2em 1.0em;
+}
+
+input[type=file] {
+	width: 100%;
+}
+
+select {
+	padding: 0.2em 1.0em;
+}
+
+p {
+	margin-top: 1.0em;
+	margin-bottom: 0.5em;
+}
+
+hr {
+	margin: 2.0em 0em 2.0em;
+	border: none;
+	border-top: 1px solid #D0D0D0;
+}
+
+table {
+	border: 1px solid #D0D0D0;
+	border-collapse: collapse;
+}
+
+
+/*---- Specific elements ----*/
+
+#band-config td, #band-config th {
+	padding: 0.2em 0.5em;
+	border-top: 1px solid #D0D0D0;
+}
+
+#band-config td {
+	text-align: center;
+}
+
+#band-config tbody td:nth-child(1) {
+	text-align: right;
+}
+
+#band-config td:nth-child(2) input[type=text] {
+	width: 8em;
+}
+
+#band-config input[type=number] {
+	width: 4em;
+	text-align: right;
+}
+
+#band-config td:nth-child(5) input[type=text] {
+	width: 6em;
+}
+
+
+#overall-power-and-file-name {
+	display: table;
+	width: 100%;
+}
+
+#overall-power-and-file-name > div {
+	display: table-cell;
+	width: 50%;
+}
+
+
+#power-distribution td, #power-distribution th {
+	padding: 0.4em 0.8em;
+	border: 1px solid #D0D0D0;
+}
+
+#power-distribution td:nth-child(3) {
+	text-align: right;
+}
+
+
+#file-export-table {
+	display: table;
+}
+
+#file-export-table > p {
+	display: table-row;
+}
+
+#file-export-table > p > span {
+	display: table-cell;
+}
+
+#file-export-table > p > span:first-child {
+	padding-right: 1.0em;
+}
+
+#file-export-table input[type=text] {
+	width: 15em;
+}
+
+
+#numbers {
+	font-size: 80%;
+}
+
+#numbers th, #numbers td {
+	padding: 0em 0.8em;
+}
+
+#numbers thead th {
+	border-bottom: 1px solid #D0D0D0;
+}
+
+#numbers tfoot th {
+	border-top: 1px solid #D0D0D0;
+}
+
+#numbers td {
+	text-align: right;
+}
+
+
+#about p {
+	line-height: 1.6;
+	font-size: 90%;
+	font-style: italic;
+}
